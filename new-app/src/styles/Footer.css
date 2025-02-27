@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+
+/* Footer Container */
+.footer-container {
+    width: calc(100% - 250px); /* Ensure it does not overlap sidebar */
+    margin-left: 250px; /* Start after sidebar */
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: -80px;
+    height: 180px; /* Fixed height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    opacity: 1;
+    transition: bottom 0.4s ease-in-out;
+    bottom: -100px;
+}
+
+/* Hide footer when not in view */
+.footer-hidden {
+    
+    opacity: 0;
+    bottom: -100px;
+   
+}
+
+/* Footer Title */
+.footer-title {
+    font-family: "Sixtyfour", sans-serif;
+    font-weight: bold;
+    text-align: left;
+    width: 90%;
+    padding-left: 10px;
+    font-size: 20px; 
+    margin-top: 5px;
+}
+
+/* Footer Text */
+.footer-text {
+    font-size: 14px; 
+    text-align: left; 
+    width: 90%; 
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 90px; 
+}
+
+/* Copyright Text */
+.footer-copyright {
+    font-size: 11px; 
+    margin-top: auto; 
+}
+
+/* Prevent content from being hidden under footer */
+body {
+    padding-bottom: 200px; /* Matches footer height */
+}

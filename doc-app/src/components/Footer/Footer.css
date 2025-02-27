@@ -1,0 +1,44 @@
+.footer {
+    width: 1000px;
+    margin: 0 auto;  /* Center the footer */
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    position: relative; /* Keep it at the bottom */
+    bottom: 0;
+    height: 150px;
+  }
+  
+  .footer-left {
+    text-align: left;
+    max-width: 90%;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 90px;
+  }
+  
+  .footer-left h2 {
+    margin: 0;
+    font-size: 16px;
+    margin-top: 10px;
+    font-family: "Sixtyfour", sans-serif; 
+  }
+  
+  .footer-left p {
+    margin: 5px 0;
+    font-size: 10px;
+    margin-top: 5px;
+    font-family: "inter", sans-serif;
+  }
+
+  .footer-center {
+      position: absolute;
+      bottom: -11px;
+      width: 100%;
+      text-align: center;
+      font-size: 11px;
+    }
+    

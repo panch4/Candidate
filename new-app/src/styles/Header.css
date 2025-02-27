@@ -1,0 +1,96 @@
+/* Main Header Wrapper */
+.header {
+  display: flex;
+  flex-direction: column; /* Stack rows vertically */
+  padding: 10px 20px; /* Add side padding for better spacing */
+  background: #ffffff;
+  gap: 15px; /* Spacing between rows */
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Row Styling */
+.header-row {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Spacing between elements in the row */
+  flex-wrap: wrap; /* Wraps elements if screen is too small */
+  justify-content: space-between; /* Evenly distribute elements */
+}
+
+/* Search Input */
+.search-input {
+  flex: 2;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  min-width: 180px;
+}
+
+/* Dropdown Filters */
+.filter {
+  flex: 1;
+  min-width: 150px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Search Button */
+.search-btn {
+  flex: 0.5;
+  padding: 10px 20px;
+  background-color: #02080f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  min-width: 100px;
+}
+
+.search-btn:hover {
+  background-color: #b4b2e6;
+}
+
+/* All Filters Button */
+.all-filter-btn {
+  flex: 0.5;
+  padding: 10px 20px;
+  background-color: #333333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  min-width: 100px;
+}
+
+.all-filter-btn:hover {
+  background-color: #ffffff;
+}
+
+/* Ensure responsiveness for smaller screens */
+@media (max-width: 768px) {
+  .header {
+    gap: 10px; /* Smaller spacing for compact screens */
+  }
+
+  .header-row {
+    flex-direction: column; /* Stack elements vertically on small screens */
+    gap: 10px;
+  }
+
+  .search-input,
+  .filter,
+  .search-btn,
+  .all-filter-btn {
+    flex: 1;
+    min-width: 100%; /* Full width for smaller screens */
+  }
+  html, body {
+    overflow-x: hidden;
+}
+
+}

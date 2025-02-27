@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+}
+
+/* Page Container */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  background-color: #e9ecef;
+  background-image: radial-gradient(circle, #ccc 1px, transparent 1px);
+  background-size: 20px 20px;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  margin-top: -50px;
+}
+
+/* Header */
+.header {
+  background-color: #000;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+/* Logo */
+.header .logo {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Signup Form Container */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-grow: 1;
+  margin-top: 80px;
+}
+
+/* Signup Form */
+.signup-form {
+  background: white;
+  padding: 1.2rem;
+  border-radius: 16px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 350px;
+  min-height: 400px;
+  margin-top: 1.7cm;
+}
+
+/* Heading */
+.signup-form h2 {
+  text-align: center;
+  margin-bottom: 1rem; 
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Form Fields */
+.form-group {
+  margin-bottom: 0.8rem; 
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+  width: 100%;
+  padding: 0.6rem; 
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.9rem; 
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #000000;
+  box-shadow: 0 0 4px rgba(230, 57, 70, 0.5);
+}
+
+
+.password-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.password-container input {
+  width: 100%;
+  padding-right: 40px;
+}
+
+.show-hide-btn {
+  position: absolute;
+  right: 10px; 
+  background: none;
+  border: none;
+  color: #1717ce;
+  font-size: 0.75rem; 
+  cursor: pointer;
+  z-index: 1; 
+}
+
+/* Error Message */
+.error-message {
+  font-size: 0.7rem; 
+  color: #e63946;
+  margin-top: 0.5rem; 
+  text-align: left;
+}
+
+/* Checkbox Group */
+.checkbox-group {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 0.1cm; /* Adjusted margin-top */
+}
+
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.checkbox-label {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+.checkbox-label a {
+  color: #1717ce;
+  text-decoration: underline;
+}
+
+/* Submit Button */
+.submit-button {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #1717ce;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.submit-button:hover:not(:disabled) {
+  background-color: #000000;
+}
+
+/* Login Link */
+.login-link {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.login-link a {
+  color: #1717ce;
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  background-color: #000;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600; 
+}
+
+button {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}

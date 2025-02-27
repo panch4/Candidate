@@ -1,0 +1,236 @@
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+    background-image: radial-gradient(circle, #ccc 1px, transparent 1px);
+    background-size: 20px 20px;
+    background-color: #f3f3f3;
+}
+
+/* Header */
+.header {
+    background-color: #000;
+    height: 2cm;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-family: 'Sixtyfour', sans-serif;
+    font-size: 1.3rem;  
+    margin: 0;
+    color: #fff;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f3f3;
+    padding: 10px; 
+    box-sizing: border-box;
+    height: calc(100vh - 2.2cm);  
+    margin-top: 1.5cm; 
+}
+
+/* OTP Form */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login-form {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+    min-height: auto;
+    margin-top: 45px;  
+}
+
+/* Adjust the spacing for the OTP header */
+.login-form h2 {
+    margin-top: 20px; 
+    font-size: 20px; 
+    font-weight: bold;
+}
+
+/* Image Container */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;  
+}
+
+.login-image {
+    width: 100%;
+    max-width: 220px; 
+    height: auto;
+}
+
+/* Input Styles */
+.input-group {
+    position: relative;
+    margin-bottom: 12px;  
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* OTP Input Style - 6 boxes */
+.otp-input {
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;  
+    margin-bottom: 10px;
+}
+
+.otp-input input {
+    width: 30px;  
+    height: 35px;  
+    text-align: center;
+    font-size: 16px;  
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Message */
+.message {
+    font-size: 10px; 
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Login Button */
+.login-btn {
+    width: 100%;
+    padding: 8px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.login-btn:hover {
+    background: #444;
+}
+
+/* Links */
+.links {
+    margin-top: 10px;  
+    text-align: center;
+    font-size: 12px;  
+}
+
+.links span {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 10px;  
+}
+
+.links span:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    background-color: #000000;
+    height: 0.7cm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p {
+    font-size: 0.8rem;
+    color: #ffffff;
+    margin: 0;
+    text-align: center;
+}
+
+.back-to-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px; 
+    margin-top: 10px;  
+    font-size: 14px;
+    text-align: center;
+    color: #007bff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.back-to-login:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* Back icon styling */
+.back-icon {
+    width: 20px; 
+    height: 20px;
+}
+
+/* New Message Styling for OTP Timer */
+.timer-message {
+    font-size: 12px;
+    color: #d9534f;
+    font-weight: bold;
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* New Resend OTP Message Styling */
+.resend-message {
+    font-size: 12px;
+    color: #007bff;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Disabled Resend Button Style */
+.disabled-resend {
+    color: #ccc;
+    cursor: not-allowed;
+}
+.timer-message {
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.grey-text {
+    color: #666;  
+    font-weight: normal;
+}
+
+.blue-text {
+    color: #007bff; 
+    font-weight: bold;
+}

@@ -1,0 +1,63 @@
+.certificate-upload-container {
+  width: 100%;
+  max-width: 600px; /* Matches Skills section */
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border: 2px dashed #007bff;
+  text-align: center;
+  margin: 20px auto; /* Keeps it aligned below Skills section */
+}
+
+/* File Upload Input */
+.certificate-upload-container input {
+  margin-top: 10px;
+  padding: 10px;
+  border: none; /* Removes input field border */
+  outline: none;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Uploaded Certificates List */
+.certificate-list {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Individual Certificate Item */
+.certificate-item {
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Certificate Preview */
+.certificate-preview {
+  width: 100px;
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Remove Certificate Button */
+.remove-cert-btn {
+  background: #dc3545;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.remove-cert-btn:hover {
+  background: #c82333;
+}

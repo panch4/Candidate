@@ -1,0 +1,23 @@
+.profile-header {
+  width: 50%; /* Adjust width to make it shorter */
+  background: linear-gradient(to right, #007bff, #00d4ff);
+  color: white;
+  display: flex;
+  justify-content: center; /* Centers content inside */
+  align-items: center;
+  padding: 10px 0; /* Reduce height */
+  border-radius: 10px;
+  margin: 20px auto; /* Centers the header horizontally */
+  text-align: center;
+}
+
+/* Profile Info */
+.profile-info h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.profile-info p {
+  margin: 5px 0 0;
+  font-size: 16px;
+}

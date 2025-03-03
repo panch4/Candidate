@@ -1,0 +1,76 @@
+/* Basic Information Box Styling */
+.basic-info {
+  width: 100%; /* Take up full width of the remaining container */
+  max-width: calc(100% - 250px); /* Make sure it doesn't exceed the available space (sidebar is 250px wide) */
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  transition: transform 0.3s ease-in-out; /* Smooth transform effect */
+  
+  /* Adjust this to increase or decrease the width */
+  /* Example: If you want the box to take 100% of the width of the container, remove max-width */
+  /* max-width: 100%; */ /* Uncomment to take 100% of the container width */
+}
+
+.basic-info:hover {
+  transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+.basic-info-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.basic-info h2 {
+  font-size: 24px;
+  margin: 0;
+  color: #333; /* Darker color for the header */
+}
+
+.edit-btn {
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease, transform 0.3s ease; /* Smooth transition on hover */
+}
+
+.edit-btn:hover {
+  background: #0056b3;
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.info-content {
+  margin-top: 15px;
+}
+
+.info-content p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #555; /* Slightly lighter text color */
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  border: 1px solid #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.25); /* Focus effect */
+}
+
+input:hover {
+  border: 1px solid #007bff; /* Hover effect on input */
+}

@@ -1,0 +1,87 @@
+.skill-section {
+  width: 100%;
+  max-width: calc(100% - 200px);
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* Add & Remove Buttons */
+.skill-actions {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.add-bt, .remove-btn {
+  background: #dc3545; /* Same color for both buttons */
+  color: white;
+  padding: 12px 18px; /* Ensuring same padding */
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px; /* Same font size */
+  min-width: 100px; /* Ensuring same width */
+  text-align: center;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.add-btn:hover, .remove-btn:hover {
+  background: #c82333;
+  transform: scale(1.05);
+}
+
+/* Skills Container */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px; /* Adjusted margin */
+}
+
+/* Skill Items */
+.skill-item {
+  display: flex;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border-left: 4px solid #007bff;
+  cursor: default;
+}
+
+/* Selectable Mode for Removing */
+.skill-item.selectable {
+  cursor: pointer;
+  background: #f8d7da;
+  border-left: 4px solid #dc3545;
+}
+
+.skill-item.selectable:hover {
+  background: #f5c6cb;
+}
+
+/* Input Box */
+.skill-input {
+  margin-top: 30px; /* Increased margin for better spacing */
+}
+
+.skill-input input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.skill-input input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}

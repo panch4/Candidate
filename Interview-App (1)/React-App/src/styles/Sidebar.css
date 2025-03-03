@@ -1,0 +1,186 @@
+/* General Styles */
+body {
+    background-color: #f8f8fd;
+    font-family: sans-serif;
+    color: #333;
+    margin: 0;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 260px;
+    background-color: #fff;
+    color: #7c8493;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.logo-area {
+    margin-bottom: 30px;
+}
+
+.logo-area h1 {
+    color: #000;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.nav-item {
+    margin-bottom: 10px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    color: #7c8493;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    filter: invert(47%) sepia(11%) saturate(247%) hue-rotate(178deg) brightness(92%) contrast(85%);
+}
+
+.nav-link:hover {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Target the "Interviews" link - using a specific class (recommended) */
+.interviews-link .nav-link { /* Change .interviews-link to match your HTML */
+    color: #3f438e; /* Dark blue text */
+}
+
+.interviews-link .nav-icon { /* Change .interviews-link to match your HTML */
+    filter: invert(23%) sepia(60%) saturate(2218%) hue-rotate(222deg) brightness(88%) contrast(91%); /* Dark blue icon */
+}
+
+
+.nav-link.active { /* Active link styles */
+    background-color: #e9ebfd; /* Light blue */
+    color: #333; /* Dark gray text */
+    position: relative; /* For highlight bar (optional) */
+}
+
+.nav-link.active::before { /* Highlight bar (optional) */
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: #3f438e;
+}
+
+.nav-link.active .nav-icon {
+    filter: invert(23%) sepia(60%) saturate(2218%) hue-rotate(222deg) brightness(88%) contrast(91%);
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    margin-top: auto;
+}
+
+.profile-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.user-details {
+    flex: 1;
+}
+
+.user-name {
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+}
+
+.user-email {
+    font-size: 0.9em;
+    color: #7c8493;
+    margin: 0;
+}
+
+/* Main Content Styles */
+.main-content {
+    padding: 20px;
+}
+
+.interview-card {
+    background-color: white;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.company-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.header-text {
+    flex: 1;
+}
+
+.interview-time {
+    font-size: 0.9em;
+    color: #7c8493;
+    margin: 0;
+}
+
+.message {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.highlighted {
+    background-color: #e6ffe6;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.actions {
+    margin-top: 15px;
+}
+
+.action-link {
+    color: #007bff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.interviews-link .nav-link {
+    background-color: #E9EBFD;
+}

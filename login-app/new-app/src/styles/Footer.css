@@ -1,0 +1,32 @@
+/* Footer Styling */
+.footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 1000;
+  height: 0.5cm;
+}
+
+/* Hide footer when not visible */
+.footer.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Show footer when visible */
+.footer.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Ensuring content doesn't overlap footer */
+.main-content {
+  margin-bottom: 60px; /* Adjust if needed */
+}

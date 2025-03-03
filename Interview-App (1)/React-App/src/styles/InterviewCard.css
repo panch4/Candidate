@@ -1,0 +1,84 @@
+.interview-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+  /* width: fit-content;  Remove or comment out this line */
+  width: 90%; /* Or a specific pixel width like width: 700px; */
+  max-width: 800px; /* Optional: set a maximum width */
+  margin: 20px auto;
+  background-color: #fff;
+}
+  
+  .card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .company-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .header-text {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .interview-time {
+    font-size: 0.9em;
+    color: #777;
+    margin: 0;
+  }
+  
+  .card-body {
+    text-align: left; /* Align text to the left */
+  }
+  
+  .message {
+    margin-bottom: 10px;
+    line-height: 1.4; /* Improve readability */
+  }
+  
+  .highlighted { /* Style for the highlighted message */
+    background-color: #e6ffe6; /* Light green background */
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+  }
+  
+  .actions {
+    margin-top: 15px;
+  }
+  
+  .action-link {
+    color: blue;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  /* Optional: Add some hover effect to the links */
+  .action-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Optional: Style the card to have a subtle gray border */
+  .interview-card {
+      border: 1px solid #eee;
+  }
+  
+  /* Optional: Add some spacing around the card */
+  .interview-card {
+      margin: 30px auto; /* Adjust top/bottom as needed */
+  }
+  
+  /* Optional: Make the card responsive */
+  @media (max-width: 600px) {
+    .interview-card {
+      width: 95%; /* Take up most of the screen width on smaller screens */
+      margin: 10px auto; /* Reduce margin on smaller screens */
+    }
+  }
